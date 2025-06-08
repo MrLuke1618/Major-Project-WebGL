@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Dual Perspectives A 360° _ Linear Narrative Experience</title>
+    <title>Unity Web Player | Dual Perspectives A 360° And Linear Narrative Experience</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Dual Perspectives A 360° _ Linear Narrative Experience</div>
+        <div id="unity-build-title">Dual Perspectives A 360° And Linear Narrative Experience</div>
       </div>
     </div>
     <script>
@@ -60,7 +60,7 @@
         codeUrl: buildUrl + "/WebGL_Version3_Linear360.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Luke1618",
-        productName: "Dual Perspectives A 360° _ Linear Narrative Experience",
+        productName: "Dual Perspectives A 360° And Linear Narrative Experience",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -122,39 +122,6 @@
 
       document.body.appendChild(script);
 
-function EmbedYouTubeVideo(videoId) {
-        // Create the iframe element
-        var iframe = document.createElement('iframe');
-        iframe.width = '640';
-        iframe.height = '360';
-        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-        iframe.style.position = 'absolute';
-        iframe.style.top = '50%';
-        iframe.style.left = '50%';
-        iframe.style.transform = 'translate(-50%, -50%)';
-        iframe.style.zIndex = '1000';
-        iframe.style.border = 'none';
-        document.body.appendChild(iframe);
-
-        // Create the close button
-        var closeButton = document.createElement('button');
-        closeButton.innerHTML = 'Close';
-        closeButton.style.position = 'absolute';
-        closeButton.style.top = 'calc(50% + 200px)';
-        closeButton.style.left = '50%';
-        closeButton.style.transform = 'translateX(-50%)';
-        closeButton.style.zIndex = '1001';
-        closeButton.style.padding = '10px 20px';
-        closeButton.style.backgroundColor = '#ff0000';
-        closeButton.style.color = '#ffffff';
-        closeButton.style.border = 'none';
-        closeButton.style.cursor = 'pointer';
-        closeButton.onclick = function () {
-            document.body.removeChild(iframe);
-            document.body.removeChild(closeButton);
-        };
-        document.body.appendChild(closeButton);
-    }
     </script>
   </body>
 </html>
